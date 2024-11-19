@@ -26,13 +26,13 @@ You should copy [[./user.js][ ~user.js~ ]] file before the theme works.
 The option system depends on user configuration, and nothing applies without settings. \\
 Also, real-time changes are difficult because of [[./docs/Restrictions.md#supports][technical limitations]] and require a restart.
 
-Some settings [[https://github.com/black7375/Firefox-UI-Fix/wiki/Options#using-userjs][can be conflicted]] and should be explicitly set to =false=.
+Some settings [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Options#using-userjs][can be conflicted]] and should be explicitly set to =false=.
 
 -----
 
 🔔🔔 Is your Firefox version =v102= or lower?
 
-You [[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution#accent-color-at-v102-or-lower][have to set]] =userChrome.compatibility.accent_color= to =true= additionally.
+You [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution#accent-color-at-v102-or-lower][have to set]] =userChrome.compatibility.accent_color= to =true= additionally.
 
 -----
 
@@ -45,7 +45,7 @@ You [[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solu
 
   /Disclaimer:/ It works on *Firefox 89* and above!!
   | *Wiki*             |             |          |         |                               |      |                      |
-  | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Screenshots][Screenshots]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Tutorial][Tutorial]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Options][Options]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution][Compatibility Issues Solution]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Tips][Tips]] | [[https://github.com/black7375/Firefox-UI-Fix/wiki/Show-Off-Your-Config][Show Off Your Config]] |
+  | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Screenshots][Screenshots]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Tutorial][Tutorial]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Options][Options]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution][Compatibility Issues Solution]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Tips][Tips]] | [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Show-Off-Your-Config][Show Off Your Config]] |
 
   [[https://user-images.githubusercontent.com/25581533/119774062-20942280-beb1-11eb-80aa-c18dd52f18d7.png]]
 
@@ -125,17 +125,17 @@ You [[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solu
 
    Linux/Mac users:
    #+BEGIN_SRC bash
-   bash -c "$(curl -fsSL https://raw.githubusercontent.com/black7375/Firefox-UI-Fix/master/install.sh)"
+   bash -c "$(curl -fsSL https://raw.githubusercontent.com/JZsam/Firefox-UI-Fix/master/install.sh)"
    #+END_SRC
 
-Windows users: Run with powershell ([[https://github.com/black7375/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution#windows-7-powershell-script-not-works][Does not work at Win7?]])
+Windows users: Run with powershell ([[https://github.com/JZsam/Firefox-UI-Fix/wiki/Compatibility-Issues-Solution#windows-7-powershell-script-not-works][Does not work at Win7?]])
    #+BEGIN_SRC powershell
-   Powershell -c "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iwr https://raw.githubusercontent.com/black7375/Firefox-UI-Fix/master/install.ps1 -useb | iex"
+   Powershell -c "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iwr https://raw.githubusercontent.com/JZsam/Firefox-UI-Fix/master/install.ps1 -useb | iex"
    #+END_SRC
 
    *Manual Installation*
 
-   You can see the [[https://github.com/black7375/Firefox-UI-Fix/wiki/Installation-Guide][installation guide]] with screenshots on the wiki.
+   You can see the [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Installation-Guide][installation guide]] with screenshots on the wiki.
 
   1. Download files
      - Click the green ":arrow_down: Code" button above
@@ -152,8 +152,8 @@ Windows users: Run with powershell ([[https://github.com/black7375/Firefox-UI-Fi
   4. Restart Firefox
      - Click the =Clear startup cache…= at the top of =about:support=
 
-  If you prefer Photon, see [[https://github.com/black7375/Firefox-UI-Fix/tree/photon-style][Lepton's photon-style]].\\
-  If you prefer Proton, see [[https://github.com/black7375/Firefox-UI-Fix/tree/proton-style][Lepton's proton-style]].
+  If you prefer Photon, see [[https://github.com/JZsam/Firefox-UI-Fix/tree/photon-style][Lepton's photon-style]].\\
+  If you prefer Proton, see [[https://github.com/JZsam/Firefox-UI-Fix/tree/proton-style][Lepton's proton-style]].
 
 
 ** WHY Proton?
@@ -214,35 +214,35 @@ Thanks to all sponsors & contributors to this project for providing help and dev
 [[https://github.com/Ygg01][@@html:<img width="60" height="60" src="https://avatars.githubusercontent.com/u/1146204?s=60&v=4"/>@@]]
 [[https://github.com/engelju][@@html:<img width="60" height="60" src="https://avatars.githubusercontent.com/u/2188152?s=60&v=4"/>@@]]
 
-- A donation was received on [[https://ko-fi.com/black7375][Ko-Fi]]
+- A donation was received on [[https://ko-fi.com/JZsam][Ko-Fi]]
   - [[https://ko-fi.com/home/coffeeshop?txid=97e5fa0d-c73e-4308-a2fd-6b44b08cd828][Safira]]
   - [[https://ko-fi.com/duncanyoyo1][duncanyoyo1]]
 - Private sponsors: 5
 
 *Contributors*
 
-[[https://github.com/black7375/Firefox-UI-Fix/graphs/contributors][@@html:<img src="https://contrib.rocks/image?repo=black7375/Firefox-UI-Fix"/>@@]]
+[[https://github.com/JZsam/Firefox-UI-Fix/graphs/contributors][@@html:<img src="https://contrib.rocks/image?repo=JZsam/Firefox-UI-Fix"/>@@]]
 
 A list of all contributors can be found in [[./CREDITS][CREDITS]].
 
 ** Bug / Questions?
 
-If you found a bug, please contact [[https://github.com/black7375/Firefox-UI-Fix/issues][issue]]. \\
-If you have any questions or inquiries, please contact [[https://github.com/black7375/Firefox-UI-Fix/discussions][discussions]].
+If you found a bug, please contact [[https://github.com/JZsam/Firefox-UI-Fix/issues][issue]]. \\
+If you have any questions or inquiries, please contact [[https://github.com/JZsam/Firefox-UI-Fix/discussions][discussions]].
 
 ** FAQ
 
   - *Black pixels around the selected tab bottom corners* \\
     [[https://user-images.githubusercontent.com/5571586/120401980-edf58a00-c2f5-11eb-9e64-ce50c5b189b2.png]]
 
-  Please follow the [[https://github.com/black7375/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]], \\
+  Please follow the [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]], \\
   or set =about:config='s =svg.context-properties.content.enabled= to =true= .
 
   - *The closed button and some panel menu icons are not visible.* \\
     [[https://user-images.githubusercontent.com/77958663/130395848-7af58241-bbbf-4273-bb62-14382c44098d.png]]
     [[https://user-images.githubusercontent.com/25581533/120487528-93b40200-c3a5-11eb-98ad-3498beb9f38e.png]]
 
-  Please follow the [[https://github.com/black7375/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]], \\
+  Please follow the [[https://github.com/JZsam/Firefox-UI-Fix/wiki/Installation-Guide][Installation Guide]], \\
   or copy the =icons= directory to =chrome= .
 
 
