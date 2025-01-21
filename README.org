@@ -1,5 +1,5 @@
-* Lepton (old name: Proton Fix) *
-** Jzdoot Updates **
+* Lepton (old name: Proton Fix)
+** Jzdoot Updates
 I changed the Lepton project to fit my needs. I use TST (Tree Style Tabs) as my tab bar, so I removed the tab bar at the top. Also I removed the name in the sidebar for TST.
 Another change I made to Lepton is that I removed the extentions icon because I don't use it.
 
