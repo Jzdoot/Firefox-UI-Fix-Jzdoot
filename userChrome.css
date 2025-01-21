@@ -25,6 +25,8 @@ tab{
 display:none!important;
 }
 
+#unifined-extentions-button { display: none }
+
 /* Enable option to edit bookmark URLs under Add Bookmark (blue star) menu */
 .editBMPanel_locationRow {
   display: initial !important;
