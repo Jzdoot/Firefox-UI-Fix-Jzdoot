@@ -336,14 +336,18 @@ multiselect() {
 #== Profile Dir ================================================================
 firefoxProfileDirPaths=(
   "${HOME}/.mozilla/firefox"
+  "${XDG_CONFIG_HOME:-$HOME/.config}/mozilla/firefox"
   "${HOME}/.waterfox"
   "${HOME}/.librewolf"
+  "${XDG_CONFIG_HOME:-$HOME/.config}/librewolf/librewolf"
   "${HOME}/.ghostery browser"
   "${HOME}/.pulse-browser"
   "${HOME}/.firedragon"
   "${HOME}/.cachy"
   "${HOME}/.local/opt/tor-browser/app/Browser/TorBrowser/Data/Browser"
   "${HOME}/.var/app/org.mozilla.firefox/.mozilla/firefox"
+  "${HOME}/.var/app/io.gitlab.librewolf-community/.librewolf"
+  "${HOME}/.var/app/net.waterfox.waterfox/.waterfox"
   "${HOME}/snap/firefox/common/.mozilla/firefox"
   "${HOME}/Library/Application Support/Firefox"
   "${HOME}/Library/Application Support/Waterfox"

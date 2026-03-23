@@ -81,6 +81,15 @@ $_layoutCommonMenus: (
     menupopup {
       --menuitem-image: none; /* Prevent Image Inheritance */
     }
+    & > :is(.menubar-text, .menu-text) {
+      @include OS($win) {
+        transform: translateY(-1px) !important; /* Fix menu top padding position */
+        padding-inline-start: 0.3em !important;
+      }
+      @include OS($linux) {
+        @include _layout_init_linux;
+      }
+    }
     @include NotOption("userChrome.padding.global_menubar") {
       padding-block: 2px !important;
     }
@@ -93,6 +102,11 @@ $_layoutCommonMenus: (
     @include _layout_root_non_native;
     @include _layoutIconMenus {
       @include _layout_init_non_native();
+
+      // FF v141 #1128
+      > .menu-icon {
+        display: none !important;
+      }
     }
 
     // FF v121
@@ -113,10 +127,6 @@ $_layoutCommonMenus: (
 /* Padding - Linux */
 @include OS($linux) {
   @include _layout_root_linux;
-
-  #{$_globalMenus} > .menubar-text {
-    @include _layout_init_linux;
-  }
 }
 
 /* Padding - Mac */

@@ -19,6 +19,11 @@
 }
 
 #tabbrowser-tabs[closebuttons="activetab"] {
+  > #pinned-tabs-container
+  > .tabbrowser-tab:not([pinned])
+  > .tab-stack
+  > .tab-content
+  > .tab-close-button:not([selected]),
   > #tabbrowser-arrowscrollbox
   > .tabbrowser-tab:not([pinned])
   > .tab-stack
@@ -73,4 +78,15 @@
 #tabbrowser-tabs[closebuttons="activetab"] .tabbrowser-tab:not(:hover) > .tab-stack > .tab-content > .tab-close-button {
   padding-inline-start: 3px !important; /* Original: 0px */
   width: 19px !important; /* Redefine from 19px !important, Original: 17px = (width - padding)  */
+}
+
+#tabbrowser-tabs[orient="vertical"]:not([expanded]) .tab-close-button {
+  padding: 2px !important;
+  width: 16px !important;
+  height: 16px !important;
+  background-image: linear-gradient(var(--close-button-extra-background)), linear-gradient(var(--tab-selected-bgcolor, var(--toolbar-bgcolor))), linear-gradient(var(--toolbox-bgcolor)) !important;
+
+  &:-moz-window-inactive {
+    background-image: linear-gradient(var(--close-button-extra-background)), linear-gradient(var(--tab-selected-bgcolor, var(--toolbar-bgcolor))), linear-gradient(var(--toolbox-bgcolor-inactive)) !important;
+  }
 }
